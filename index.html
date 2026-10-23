@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daily Drip: premium coffee, refreshers and matcha at student-friendly prices. Drip into Happiness.">
+  <title>Daily Drip | Drip into Happiness</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <nav class="side" id="links">
+      <a href="#story">Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#offer">Offer</a>
+      <a href="#signup" class="cta-link">Try your Daily Drip!</a>
+    </nav>
+    <a href="#home" class="logo"><img class="mark" src="logo.png" alt="Daily Drip logo">DAILY <i>Drip</i></a>
+    <a href="#signup" class="nav-cta">Try your Daily Drip!</a>
+    <button id="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <img class="hero-logo" src="logo.png" alt="Daily Drip logo">
+      <p class="est">Coffee · Refreshers · Matcha</p>
+      <h1>Drip into<br><i>Happiness</i></h1>
+      <p class="sub">Premium drinks, in three sizes, at prices that respect a student budget.</p>
+      <div class="cta-row">
+        <a href="#signup" class="btn gold">Try your Daily Drip!</a>
+        <a href="#menu" class="btn line">Explore the menu</a>
+      </div>
+      <div class="cups" aria-hidden="true">
+        <div class="cup s" style="--liq:#6b3f26"><i class="straw"></i><i class="lid"></i><div class="body"><div class="sleeve"><img src="logo.png" alt=""></div></div></div>
+        <div class="cup m" style="--liq:#c24a64"><i class="straw"></i><i class="lid"></i><div class="body"><div class="sleeve"><img src="logo.png" alt=""></div></div></div>
+        <div class="cup l" style="--liq:#6f9a55"><i class="straw"></i><i class="lid"></i><div class="body"><div class="sleeve"><img src="logo.png" alt=""></div></div></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div>
+      <span>Small</span><span>◆</span><span>Medium</span><span>◆</span><span>Large</span><span>◆</span><span>Drip into Happiness</span><span>◆</span>
+      <span>Small</span><span>◆</span><span>Medium</span><span>◆</span><span>Large</span><span>◆</span><span>Drip into Happiness</span><span>◆</span>
+    </div></div>
+
+    <!-- STORY -->
+    <section id="story" class="ivory">
+      <div class="container story">
+        <div class="reveal">
+          <p class="eyebrow">The Daily Drip story</p>
+          <h2>Everyday drinks, <i>worth every sip.</i></h2>
+          <p>Too many drinks cost a lot and still disappoint. We started Daily Drip to change that: flavorful, satisfying drinks, made well, and priced so they don't swallow your weekly allowance.</p>
+          <p>For students, young professionals and drink lovers, there's a cup for every mood and every budget.</p>
+        </div>
+        <ol class="pillars">
+          <li class="reveal"><b>I</b><div><h3>Affordable</h3><p>Quality you can enjoy without overspending.</p></div></li>
+          <li class="reveal"><b>II</b><div><h3>Variety</h3><p>Coffee, refreshers and matcha, in three sizes.</p></div></li>
+          <li class="reveal"><b>III</b><div><h3>Great taste</h3><p>Flavorful and satisfying in every cup.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="dark">
+      <div class="container">
+        <div class="center reveal">
+          <p class="eyebrow">The menu</p>
+          <h2>Choose your <i>drip</i></h2>
+        </div>
+        <div class="picker reveal" id="picker">
+          <div class="tabs">
+            <button class="tab on" data-cat="coffee">Coffee</button>
+            <button class="tab" data-cat="refreshers">Refreshers</button>
+            <button class="tab" data-cat="matcha">Matcha</button>
+          </div>
+          <p class="desc" id="desc"></p>
+          <div class="flavors" id="flavors"></div>
+          <div class="sizes">
+            <button class="size on" data-size="s">
+              <div class="cup s"><i class="straw"></i><i class="lid"></i><div class="body"><div class="sleeve"><img src="logo.png" alt=""></div></div></div>
+              <b>Small</b><span>12 oz</span><em class="p" data-p="s"></em>
+            </button>
+            <button class="size" data-size="m">
+              <div class="cup m"><i class="straw"></i><i class="lid"></i><div class="body"><div class="sleeve"><img src="logo.png" alt=""></div></div></div>
+              <b>Medium</b><span>16 oz</span><em class="p" data-p="m"></em>
+            </button>
+            <button class="size" data-size="l">
+              <div class="cup l"><i class="straw"></i><i class="lid"></i><div class="body"><div class="sleeve"><img src="logo.png" alt=""></div></div></div>
+              <b>Large</b><span>22 oz</span><em class="p" data-p="l"></em>
+            </button>
+          </div>
+          <div class="total">
+            <div><span id="sel-name"></span><strong id="sel-price"></strong></div>
+            <a href="#signup" class="btn gold">Try your Daily Drip!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFER -->
+    <section id="offer" class="ivory">
+      <div class="container offer reveal">
+        <div>
+          <p class="eyebrow">Launch offer</p>
+          <h2>A free size upgrade on your <i>first Daily Drip</i></h2>
+          <p id="timer-label" class="tlabel">Offer ends in</p>
+          <div class="timer" id="timer" role="timer">
+            <div><b id="t-d">00</b><span>Days</span></div>
+            <div><b id="t-h">00</b><span>Hrs</span></div>
+            <div><b id="t-m">00</b><span>Min</span></div>
+            <div><b id="t-s">00</b><span>Sec</span></div>
+          </div>
+          <p id="expired" class="expired" hidden>Offer ended</p>
+        </div>
+        <div class="terms">
+          <h3>Full terms</h3>
+          <ul>
+            <li><b>Dates</b> Nov 2 to Dec 1, 2026</li>
+            <li><b>Eligibility</b> New signups with a valid email</li>
+            <li><b>Limit</b> One claim per person</li>
+            <li><b>Exclusions</b> Not combinable with other promos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGN UP -->
+    <section id="signup" class="dark">
+      <div class="container signup">
+        <div class="reveal">
+          <p class="eyebrow">Join Daily Drip</p>
+          <h2>Try your <i>Daily Drip!</i></h2>
+          <p>Sign up to claim your launch offer and hear first about new flavors and promos.</p>
+          <ul class="perks"><li>Claim your launch offer</li><li>First to know about new drinks</li><li>Unsubscribe anytime</li></ul>
+        </div>
+        <form id="lead-form" class="form reveal" novalidate>
+          <label for="name">Full name</label>
+          <input type="text" id="name" autocomplete="name" placeholder="Juan Dela Cruz">
+          <small class="err" id="name-err" role="alert"></small>
+          <label for="email">Email address</label>
+          <input type="email" id="email" autocomplete="email" placeholder="you@example.com">
+          <small class="err" id="email-err" role="alert"></small>
+          <label class="check"><input type="checkbox" id="consent"><span>I agree to receive promo emails from Daily Drip.</span></label>
+          <small class="err" id="consent-err" role="alert"></small>
+          <button type="submit" class="btn gold full" id="submit-btn">Claim my offer</button>
+          <p class="note">Class project: no personal data is stored or sent.</p>
+          <div id="success" class="success" hidden>
+            <h3>Welcome, <span id="success-name"></span>.</h3>
+            <p>Your Daily Drip offer is on its way. Thank you for signing up.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <a href="#home" class="logo"><img class="mark" src="logo.png" alt="Daily Drip logo">DAILY <i>Drip</i></a>
+      <nav><a href="#story">Story</a><a href="#menu">Menu</a><a href="#offer">Offer</a><a href="#signup">Sign up</a></nav>
+      <div class="social"><a href="#" target="_blank" rel="noopener">TikTok</a><a href="#" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+    <p class="legal">© <span id="year"></span> Daily Drip · Fictional brand for a class project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
